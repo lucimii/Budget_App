@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="370dp"
+        android:layout_height="383dp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="112dp">
+
+        <LinearLayout
+            android:id="@+id/LinLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="373dp"
+        android:layout_height="79dp"
+        android:text="The Goods"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="@+id/scrollView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="182dp"
+        android:layout_height="63dp"
+        android:text="ADD"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/list_btn"
+        app:layout_constraintStart_toStartOf="@+id/scrollView2"
+        tools:layout_editor_absoluteY="506dp" />
+
+    <Button
+        android:id="@+id/list_btn"
+        android:layout_width="179dp"
+        android:layout_height="64dp"
+        android:text="LIST"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+        tools:layout_editor_absoluteY="506dp" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="375dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/list_btn"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/add_btn"
+        tools:layout_editor_absoluteY="615dp" />
+
+    <Button
+        android:id="@+id/calc_btn"
+        android:layout_width="380dp"
+        android:layout_height="58dp"
+        android:text="Calculate"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Budget:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/list_btn"
+        app:layout_constraintStart_toStartOf="@+id/add_btn"
+        tools:layout_editor_absoluteY="574dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
