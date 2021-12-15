@@ -1,6 +1,6 @@
 package com.example.budgetingapp;
 
-public class DataBase {
+public class PicDataBase {
 
     public static int id[] = {
     R.drawable.dunno,

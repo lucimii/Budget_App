@@ -2,12 +2,10 @@ package com.example.budgetingapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,14 +26,17 @@ public class MainActivity extends AppCompatActivity {
 
         ImageButton buttonItem;
 
-for (int i = 0; i < DataBase.id.length; i++) {
+for (int i = 0; i < PicDataBase.id.length; i++) {
 
 
     buttonItem = new ImageButton(this);
 
-    buttonItem.setImageDrawable(DataBase.id[i]);
+    buttonItem.setImageDrawable(getDrawable(PicDataBase.id[i]));
+    mLinearLayout.addView(buttonItem);
 }
-        mLinearLayout.addView(buttonItem);
+
     }
 
 }
+
+
